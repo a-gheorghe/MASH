@@ -1,2 +1,0 @@
-# MASH
-Created with CodeSandbox
