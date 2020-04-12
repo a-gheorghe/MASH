@@ -104,7 +104,30 @@ const Canvas = ({ width, height }) => {
 
   return (
     <React.Fragment>
-      <canvas height={height} width={width} ref={canvasRef} />
+      <div className="homes">
+        <button> M </button>
+        <button> A </button>
+        <button> S </button>
+        <button> H </button>
+      </div>
+      <div className="canvasContainer">
+        <div className="cars">
+          <input className="cars__input" />
+          <input className="cars__input" />
+          <input className="cars__input" />
+        </div>
+        <canvas
+          height={height}
+          width={width}
+          ref={canvasRef}
+          className="canvas"
+        />
+        <div className="partners">
+          <input className="partners__input" />
+          <input className="partners__input" />
+          <input className="partners__input" />
+        </div>
+      </div>
       <div> Count is {count} </div>
     </React.Fragment>
   );
